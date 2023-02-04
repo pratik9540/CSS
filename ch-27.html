@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Transform</title>
+    <style>
+        .rotate {
+        width: 100px;
+        height: 100px;
+        background: teal;
+        transform: rotate(45deg);
+        padding: 50px;
+        margin: 50px;
+    }
+    .scale {
+        width: 100px;
+        height: 100px;
+        background: teal;
+        transform: scale(0.5, 1.3);
+        padding: 50px;
+        margin: 50px;
+    }
+    .skew {
+        width: 100px;
+        height: 100px;
+        background: teal;
+        transform: skew(20deg, -30deg);
+        padding: 50px;
+        margin: 50px;
+        }
+        .transform {
+        transform: rotate(15deg) translateX(200px);
+}
+        .translate {
+        width: 100px;
+        height: 100px;
+        background: teal;
+        transform: translate(200px, 50%);
+        }
+        .transform {
+        display: inline-block;
+        width: 200px;
+        height: 100px;
+        background: teal;
+        transition: transform 1s;
+        }
+        .origin1 {
+        transform-origin: 0 0;
+        }
+        .origin2 {
+        transform-origin: 100% 0;
+        }
+        .transform:hover {
+        transform: rotate(30deg);
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="rotate"></div>
+    <div class="scale"></div>
+    <div class="skew"></div>
+    <div class="transform"></div>
+    <div class="translate"></div>
+    <div class="transform originl"></div>
+    <div class="transform origin2"></div>
+
+
+</body>
+</html>
