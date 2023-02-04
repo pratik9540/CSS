@@ -23,6 +23,40 @@
         flex-shrink: 0;
         flex-basis: 200px; /* or % could be used to ensure a specific layout */
         }
+        body {
+        margin: 0;
+        padding: 0;
+        }
+        .container {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        }
+        .header {
+        flex: 0 0 50px;
+        }
+        .content-body {
+        flex: 1 1 auto;
+        display: flex;
+        flex-direction: row;
+        }
+        .content-body .content {
+        flex: 1 1 auto;
+        overflow: auto;
+        }
+        .content-body .sidenav {
+        order: -1;
+        flex: 0 0 100px;
+        overflow: auto;
+        }
+        .content-body .ads {
+        flex: 0 0 100px;
+        overflow: auto;
+        }
+        .footer {
+        flex: 0 0 50px;
+        }
+
     </style>
 </head>
 <body>
@@ -33,5 +67,16 @@
         <div class="flex-item">4</div>
         <div class="flex-item">5</div>
        </div>
+
+       <div class="container">
+        <header class="header">Header</header>
+        <div class="content-body">
+        <main class="content">Content</main>
+        <nav class="sidenav">Nav</nav>
+        <aside class="ads">Ads</aside>
+        </div>
+        <footer class="footer">Footer</footer>
+       </div>
+       
 </body>
 </html>
